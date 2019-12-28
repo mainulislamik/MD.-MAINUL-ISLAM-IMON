@@ -88,3 +88,78 @@ int main()
 
     getch();
 }
+//c++ constructor
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class student
+{
+    public:
+        string name;
+
+        int id;
+        double gpa;
+        void display()
+        {
+            cout<<"name: "<<name <<"\nid: "<<id <<"\ngpa: " <<gpa<<"\n\n";
+        }
+        student( string m,int y, double z)
+        {
+
+            name=m;
+            id=y;
+            gpa=z;
+        }
+};
+
+int main()
+{
+    student nahid("nahid",1001,4.20);
+    nahid.display();
+
+    student kamal("kamal",1002,4.22);
+    kamal.display();
+
+    getch();
+}
+//c++ defult conosturtor
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class student
+{
+    public:
+        string name;
+
+        int id;
+        double gpa;
+        void display()
+        {
+            cout<<"name: "<<name <<"\nid: "<<id <<"\ngpa: " <<gpa<<"\n\n";
+        }
+        student( string m,int y, double z)
+        {
+
+            name=m;
+            id=y;
+            gpa=z;
+        }
+        student()
+        {
+            cout<<"welcome to student management system"<<endl;
+        }
+};
+
+int main()
+{
+    student db;
+    student nahid("nahid",1001,4.20);
+    nahid.display();
+
+    student kamal("kamal",1002,4.22);
+    kamal.display();
+
+    getch();
+}
